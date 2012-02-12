@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Budget</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/budget.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css">
+  </head>
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Budget</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#Record">Record</a></li>
+              <li><a href="#Dashboard">Dashboard</a></li>
+              <li><a href="#Account">Account</a></li>
+              <li><a href="#Logout">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Record a transaction</legend>
+          
+          <div class="control-group">
+            <label class="control-label">Amount</label>
+            <div class="controls">
+              <div class="input-prepend">
+                <span class="add-on">$</span><input type="number" class="span2">
+              </div>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label">This is an</label>
+            <div class="controls">
+              <label class="radio"><input type="radio" name="transaction" checked> Expense</label>
+              <label class="radio"><input type="radio" name="transaction"> Income</label>
+            </div>
+          </div>
+
+          <div class="control-group success">
+            <label class="control-label">Category</label>
+            <div class="controls">
+              <input type="text" class="span3" ><span class="help-inline ">$10.73 left</span>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn">Cancel</button>
+          </div>
+
+          </fieldset>
+        </form>
+    </div>
+
+    <!-- pulling in javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Budget</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/budget.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css">
+  </head>
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Budget</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="#Record">Record</a></li>
+              <li class="active"><a href="#Dashboard">Dashboard</a></li>
+              <li><a href="#Account">Account</a></li>
+              <li><a href="#Logout">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+
+      <div class="row">
+        
+        <h1 class="span12">Dashboard</h1>
+          
+        <div class="category span3">
+
+          <h2>Food &amp; Dining</h2>
+
+          <div class="progress progress-success">
+            <div class="bar" style="width:20%"></div>
+          </div>
+
+          <div class="alert alert-info">$160 of $200 remaining</div>
+
+        </div>
+
+        <div class="category span3">
+
+          <h2>Entertainment</h2>
+
+          <div class="progress progress-danger">
+            <div class="bar" style="width:90%"></div>
+          </div>
+
+          <div class="alert alert-error">$10 of $100 remaining</div>
+
+        </div>
+      
+      </div>
+
+    </div>
+
+    <!-- pulling in javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
